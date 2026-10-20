@@ -1,0 +1,134 @@
+const Message=document.getElementById("message")
+const Button1=document.getElementById("loadbtn")
+console.log(document)
+
+
+function loadMessage(){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+
+            let success = true
+
+            if (success){
+                resolve("Welcome to PDM")
+            }
+            else{
+                reject("Failed to load")
+            }
+        }, 3000)
+    })
+}
+
+Button1.addEventListener(
+    "click", function(){
+        Message.innerHTML="Loading..."
+        loadMessage()
+
+        .then(function(result){
+            Message.innerHTML=result
+        })
+        .catch(function(error){
+            Message.innerHTML=error
+        })
+    }
+)
+
+
+
+
+
+
+/////
+
+
+
+
+
+function loadMessage(){
+    return new Promise(function(resolve){
+        setTimeout(function(){
+            resolve("Loading images....")
+        }, 3000)
+    })
+}
+
+Button1.addEventListener(
+    "click", function(){
+        Message.innerHTML="Loading...."
+        loadMessage()
+
+        .then(function(result){
+            Message.innerHTML=result
+            
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve("Loading kanin....")
+                }, 2500)
+            })
+        })
+
+        .then(function(result){
+            Message.innerHTML=result
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve("Loading buseng.....")
+                }, 2500)
+            })
+        })
+        .then(function(result){
+            Message.innerHTML=result
+
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve("Yay, tapos na :DDDD")
+                }, 2500)
+            })
+        })
+        .then(function(result){
+            Message.innerHTML=result
+        })
+
+    })
+
+
+
+
+/////
+
+
+
+Button1.addEventListener(
+    "click", function(){
+        Message.innerHTML="Loading dashboard"
+
+        Profile.innerHTML="Profile waiting"
+        Grades.innerHTML="Grades waiting"
+        Schedule.innerHTML="Schedule waiting"
+
+        const profilepromise=new Promise(function(resolve){
+    setTimeout(function(){
+        Profile.innerHTML="Profile loaded!"
+        resolve();
+    }, 1000)
+})
+
+
+const gradespromise=new Promise(function(resolve){
+    setTimeout(function(){
+        Grades.innerHTML="Grades loaded!"
+        resolve();
+    }, 2000)
+})
+
+const schedulepromise=new Promise(function(resolve){
+    setTimeout(function(){
+        Schedule.innerHTML="Schedule loaded!"
+        resolve();
+    }, 3000)
+})
+Promise.all([profilepromise, gradespromise, schedulepromise])
+.then(function(){
+    Message.innerHTML="Dashboard Ready"
+
+     })
+})

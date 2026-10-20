@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nature-inspired portfolio of Kien Leandro M. Millamina.">
+  <title>Kien Millamina | Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="brand-mark">KM</span>
+      <span class="brand-copy"><b>Kien Millamina</b><small>digital portfolio</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Growth Rings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="kicker">FIELD NOTE / 01</p>
+        <h1 id="heroTitle">Hello there!<br><em>Welcome to my web.</em></h1>
+        <p class="hero-text">I’m <strong>Kien Leandro M. Millamina</strong>, a BSCS student who enjoys turning class activities into clean, interactive websites. I like work that feels organized, alive, and easy to explore.</p>
+        <p class="hero-flavor">This portfolio is designed as a nature journal: collected studies, slow growth, and small projects that show where I’m learning, what I enjoy, and how I build.</p>
+
+        <div class="hero-actions">
+          <a class="button button-solid" href="#work">Explore the work</a>
+          <a class="text-link" href="#about">Read my field notes <span>↘</span></a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="portrait-frame reveal" id="portraitTrigger" role="button" tabindex="0" aria-label="Open a larger portrait and personal profile note">
+          <div class="portrait-halo"></div>
+          <img src="download.jpg" alt="Portrait of Kien Millamina" class="profile-portrait">
+          <div class="portrait-tag portrait-tag-top">student developer</div>
+          <div class="portrait-tag portrait-tag-bottom">personal archive</div>
+          <span class="portrait-click-note">click portrait ↗</span>
+        </div>
+      </div>
+
+      <div class="hero-index">01 — 05</div>
+    </section>
+
+    <section class="field-strip" aria-label="Portfolio summary">
+      <div><span>Focus</span><strong>Interactive Web Pages</strong></div>
+      <div><span>Current Study</span><strong>BS Computer Science</strong></div>
+      <div><span>Rituals</span><strong>Gym · Eating · Sleeping</strong></div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section-number">02</div>
+      <div class="section-intro">
+        <p class="kicker">FIELD NOTE / ABOUT</p>
+        <h2>Welcome to my Portfolio!</h2>
+        <h2>A portfolio with roots, not just sections.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p class="about-lead">I like interfaces that feel thoughtful. Instead of making another generic tech portfolio, I wanted this one to feel warmer and more personal—like. It feels like opening a portal to my soul</p>
+          <p class="about-paragraph">As a student, I’m still growing, but I already enjoy the process of shaping structure with HTML, styling it with CSS, and making it move with JavaScript and jQuery. I learn best by building, testing, refining, and then giving the output more personality.</p>
+        </div>
+
+        <div class="note-card reveal">
+          <span class="pin"></span>
+          <p class="hand-label">personal note</p>
+          <h3>Outside the screen</h3>
+          <p class="note-body">When I’m not working on activities, I usually recharge in simple ways: going to the <strong>gym</strong>, <strong>eating</strong> good food, and, honestly, <strong>sleeping</strong>. Those three are my natural reset button.</p>
+          <div class="hobby-chips" aria-label="My hobbies">
+            <button type="button" data-hobby-message="Gym days reset my head. I like the routine, the progress, and the feeling that small effort compounds over time.">Going to the gym</button>
+            <button type="button" data-hobby-message="Eating is a hobby and a reward. Good food is one of my favorite ways to slow down after school or coding work.">Eating</button>
+            <button type="button" data-hobby-message="Sleep is part of the system. When everything gets noisy, a good rest is my favorite reboot.">Sleeping</button>
+          </div>
+          <p class="hobby-message" id="hobbyMessage" aria-live="polite">Tap a hobby to read a small field note.</p>
+        </div>
+      </div>
+
+      <div class="quote-band reveal">
+        <p class="quote-label">favorite quote</p>
+        <blockquote>“No man ever steps in the same river twice, for it's not the same river, and he's not the same man.”</blockquote>
+        <cite>— Heraclitus</cite>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="section-number">03</div>
+      <div class="section-intro work-heading">
+        <div>
+          <p class="kicker">SPECIMEN COLLECTION</p>
+          <h2>Interactive studies,<br>kept alive.</h2>
+        </div>
+        <p class="work-note">Each specimen below opens the actual activity in a new tab.</div>
+
+      <div class="project-ledger">
+        <article class="project-entry reveal">
+          <div class="project-id">A.01</div>
+          <div class="project-main">
+            <div class="project-meta"><span>DOM EVENTS</span><span>JavaScript</span></div>
+            <h3>Profile Interaction Study</h3>
+            <p>A compact event-handling activity that experiments with hover behavior, clicks, double-clicks, focus events, and live content changes—an early study in making interfaces respond with clarity.</p>
+            <div class="project-features"><span>Mouse events</span><span>Input events</span><span>DOM styling</span></div>
+          </div>
+          <a class="project-open" href="projects/activity-1/index.html" target="_blank" rel="noopener">
+            <span>Open activity</span><b>↗</b>
+          </a>
+        </article>
+
+        <article class="project-entry reveal">
+          <div class="project-id">A.02</div>
+          <div class="project-main">
+            <div class="project-meta"><span>ASYNC STUDY</span><span>Promises</span></div>
+            <h3>Dashboard Loading Sequence</h3>
+            <p>A Promise-based loading exercise that simulates different dashboard resources arriving at different times. It shows how patience, timing, and sequencing affect the user’s experience.</p>
+            <div class="project-features"><span>Promise.all</span><span>setTimeout</span><span>Async state</span></div>
+          </div>
+          <a class="project-open" href="projects/activity-2/index.html" target="_blank" rel="noopener">
+            <span>Open activity</span><b>↗</b>
+          </a>
+        </article>
+
+        <article class="project-entry reveal">
+          <div class="project-id">A.03</div>
+          <div class="project-main">
+            <div class="project-meta"><span>JQUERY STUDY</span><span>Interaction</span></div>
+            <h3>Student + Table Controls</h3>
+            <p>A student profile activity using jQuery selectors and effects for feedback, visibility controls, table row styling, and a simple course switcher—small interactions, but useful ones.</p>
+            <div class="project-features"><span>jQuery</span><span>Selectors</span><span>Effects</span></div>
+          </div>
+          <a class="project-open" href="projects/activity-3/index.html" target="_blank" rel="noopener">
+            <span>Open activity</span><b>↗</b>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="section-number">04</div>
+      <div class="section-intro">
+        <p class="kicker">TOOLKIT / GROWTH RINGS</p>
+      </div>
+
+      <div class="rings-layout">
+        <div>
+          <p class="rings-note">Think of the circles like tree rings: the farther the ring reaches from the center, the more comfortable I currently am with that skill. Move your pointer across the rings to inspect them.</p>
+          <div class="rings reveal" aria-hidden="true">
+            <div class="ring ring-html"></div>
+            <div class="ring ring-js"></div>
+            <div class="ring ring-css"></div>
+            <div class="ring ring-jquery"></div>
+
+            <div class="ring-label label-html">HTML · farthest / strongest</div>
+            <div class="ring-label label-js">JavaScript</div>
+            <div class="ring-label label-css">CSS</div>
+            <div class="ring-label label-jquery">jQuery</div>
+          </div>
+        </div>
+
+        <div class="skill-list">
+          <div>
+            <span>01</span>
+            <strong>HTML</strong>
+            <p>My strongest base so far. I’m most comfortable building page structure, organizing content, and laying out sections clearly.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>JavaScript</strong>
+            <p>I use it to add behavior, events, feedback, and small interactive logic that makes a page feel responsive and alive.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>CSS</strong>
+            <p>I enjoy styling and visual arrangement, especially when I can make a design feel more intentional, readable, and unique.</p>
+          </div>
+          <div>
+            <span>04</span>
+            <strong>jQuery</strong>
+            <p>Still part of my toolkit for quick selectors, event handling, and effects—especially useful in activity-based tasks and practice exercises.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-leaf" aria-hidden="true"></div>
+      <p class="kicker">FINAL NOTE</p>
+      <h2>Still learning.<br><em>Still growing.</em></h2>
+      <p>I’m continuously improving my work one activity at a time. This portfolio is less about being finished and more about showing the direction I’m growing in—calmly, steadily, and with better taste each time.</p>
+      <p class="contact-mini">contact me here:<br>kienmillamina@gmail.com<br>+63 991 885 8216</p>
+      <a class="button button-solid" href="mailto:your@email.com">kienmillamina54@gmail.com ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Kien Millamina</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        border: solid;
+        height: 920px;
+        background-color:antiquewhite
+    }
+    button{
+        background-color: white;
+    }
+</style>
+<body>
+
+    <div style="text-align: center;">
+    <h1 id="message">Welcome Students!</h1>
+    <p>Welcome to my interactive page</p>
+    </div>
+
+    <br><br>
+
+    <div id="profile" style="margin-left: 100px;">
+    <h3>Student information:</h3>
+    <p>Name: Kien Leandro M. Millamina</p>
+    <p>Course:</p>
+    <p id="crs">BSCS</p>
+    <p>Year level: 3rd</p>
+    </div>
+
+    <br><br>
+    <div style="text-align: center;">
+    <button id="btn">Click Me!</button>
+    <button id="btn2">Hide Profile</button>
+    <button id="btn3">Show Profile</button>
+
+    <h3 id="output">Output</h3>
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <h3>Choose Your Course</h3>
+    <select name="" id="course" style="width: 300px; text-align: center;">
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSTM">BSTM</option>
+            <option value="BCED">BCED</option>
+        </select>
+    </div>
+
+    <br><br><br><br>
+    <div>
+    <table border="2" style="margin-left:auto; margin-right:auto" id="tb">
+
+            <tr>
+            <th>Sample<br>Data</th>
+            <th>Sample<br>Data</th>
+            <th>Sample<br>Data</th>
+            <th>Sample<br>Data</th>
+            <th>Sample<br>Data</th>
+            </tr>
+            
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+                <td>Data4</td>
+                <td>Data5</td>
+            </tr>
+
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+                <td>Data4</td>
+                <td>Data5</td>
+            </tr>
+
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+                <td>Data4</td>
+                <td>Data5</td>
+            </tr>
+
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+                <td>Data4</td>
+                <td>Data5</td>
+            </tr>
+
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+                <td>Data4</td>
+                <td>Data5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="text-align: center;">
+    <button id="odds">Change color of odds</button>
+    <button id="evens">Change color of evens</button>
+    <button id="hide">Hide table</button>
+    <button id="show">Show table</button>
+    </div>
+    
+        <script src="script.js"></script>
+</body>
+</html>
